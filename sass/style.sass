@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i")
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Cardo:400,400i")
 
 body
     margin: 0
@@ -192,3 +192,64 @@ $primary-color: #ffffff
 
     .team-item
         text-align: center
+
+// SECTION CLIENTS
+
+.clients
+    .caption
+        background-color: #53354a
+        padding-top: 3%
+        padding-left: 4.47%
+        padding-right: 10%
+
+    .page
+        padding: 0
+
+    .board
+        background-color: #53354a
+
+    h6
+        color: #ffffff
+        font-family: "Cardo", serif
+        font-size: 36px
+        font-style: italic
+        line-height: 42px
+
+    p
+        color: $primary-color
+        font-size: 13px
+        font-weight: 700
+        line-height: 21px
+        text-transform: uppercase
+
+.carousel-indicators
+    left: 70%
+
+    li
+        background-color: $primary-color
+        opacity: 0.2
+
+    .active
+        background-color: $primary-color
+        opacity: 1
+
+
+@media (max-width: 1200px)
+    .clients
+        .caption
+            padding: 0
+            padding-right: 4.47%
+            padding-top: 2%
+            padding-left: 4.47%
+            padding-bottom: 60px
+            h6
+                font-size: 1.9em
+            p
+                font-size: 0.8em
+
+@media (max-width: 991px)
+    .caption
+        text-align: center
+
+    .carousel-indicators
+        left: 50%
