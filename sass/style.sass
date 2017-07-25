@@ -49,6 +49,9 @@ $primary-color: #ffffff
     line-height: 21px
     text-transform: uppercase
 
+    &:hover
+        background-color: #66697F
+
 .navbar-default
     background-color: inherit
     border: 0
@@ -175,14 +178,14 @@ $primary-color: #ffffff
         font-weight: 400
         line-height: 21px
 
-    .socialMedia
-        width: 40px
-        height: 40px
-        display: inline-block
-        border: 1px solid #e8ecee
-        background-color: $primary-color
-        text-align: center
-        line-height: 40px
+.socialMedia
+    width: 40px
+    height: 40px
+    display: inline-block
+    border: 1px solid #e8ecee
+    background-color: $primary-color
+    text-align: center
+    line-height: 40px
 
 .employee
         width: 100%
@@ -279,3 +282,55 @@ $primary-color: #ffffff
 
 .download-item
     padding: 8.55% 10%
+
+@media (max-width: 767px)
+    .btn-primary
+        width: 200px
+
+// FOOTER
+
+.footer
+    background-color: #3a3e64
+    h3
+        color: #ffffff
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+
+    p
+        opacity: 0.5
+        color: $primary-color
+        font-size: 14px
+        font-weight: 400
+        line-height: 23px
+
+.socialMedia2
+    @extend .socialMedia
+    border: 1px solid $primary-color
+    background-color: inherit
+
+.contact-item
+    padding: 8.55% 10%
+
+.copyrights
+    background-color: #313454
+
+.copyrights-item
+    font-size: 14px
+    font-weight: 400
+    line-height: 23px
+    padding: 20px 10px
+    /* Text style for "Copyright" */
+    color: #808080
+    font-family: Raleway
+    /* Text style for "Y" */
+    .heart
+        color: #e84545
+        font-family: Webdings
+    /* Text style for "by Kamal C" */
+    .author
+        color: #ffffff
+        font-family: Raleway
+
+    p
+        margin: 0
