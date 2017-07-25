@@ -37,16 +37,17 @@ $primary-color: #ffffff
         margin-bottom: 77px
         padding: 0 9%
 
-    .btn-primary
-        width: 200px
-        height: 46px
-        border-radius: 2px
-        background-color: #e84545
-        color: $primary-color
-        font-size: 13px
-        font-weight: 600
-        line-height: 21px
-        text-transform: uppercase
+.btn-primary
+    width: 200px
+    height: 46px
+    border-radius: 2px
+    background-color: #e84545
+    color: $primary-color
+    border: 0
+    font-size: 13px
+    font-weight: 600
+    line-height: 21px
+    text-transform: uppercase
 
 .navbar-default
     background-color: inherit
@@ -253,3 +254,28 @@ $primary-color: #ffffff
 
     .carousel-indicators
         left: 50%
+
+// SECTION DOWNLOAD
+
+.download
+    text-align: center
+
+    h2
+        color: #2d3033
+        font-size: 28px
+        font-weight: 300
+
+    p
+        color: #2d3033
+        font-size: 13px
+        font-weight: 700
+        line-height: 21px
+        text-transform: uppercase
+
+.btn-primary
+    @extend .btn-primary
+    width: 280px
+    height: 46px
+
+.download-item
+    padding: 8.55% 10%
