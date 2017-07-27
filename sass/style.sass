@@ -37,20 +37,25 @@ $primary-color: #ffffff
         margin-bottom: 77px
         padding: 0 9%
 
-.btn-primary
+.btn-menu
     width: 200px
     height: 46px
     border-radius: 2px
     background-color: #e84545
     color: $primary-color
-    border: 0
     font-size: 13px
     font-weight: 600
     line-height: 21px
     text-transform: uppercase
+    outline: none !important
 
     &:hover
-        background-color: #66697F
+        background-color: #3A3E64
+        text-decoration: none
+        color: $primary-color
+
+    &:focus
+        color: $primary-color
 
 .navbar-default
     background-color: inherit
@@ -275,8 +280,8 @@ $primary-color: #ffffff
         line-height: 21px
         text-transform: uppercase
 
-.btn-primary
-    @extend .btn-primary
+.btn-download
+    @extend .btn-menu
     width: 280px
     height: 46px
 
@@ -284,7 +289,7 @@ $primary-color: #ffffff
     padding: 8.55% 10%
 
 @media (max-width: 767px)
-    .btn-primary
+    .btn-download
         width: 200px
 
 // FOOTER
